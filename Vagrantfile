@@ -2,7 +2,7 @@
 # vi: set ft=ruby :
 
 Vagrant.configure("2") do |config|
-  config.vm.box = "bento/debian-9.6"
+  config.vm.box = "ubuntu/bionic64"
 
   config.vm.hostname = "apt-cacher-ng"
   config.vm.network "private_network", ip: "10.0.100.30"
